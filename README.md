@@ -1,1 +1,1 @@
-Base on my first Flatiron project, 'StockStop' is going to test my abilty to refactor and expand on the original. This time incorporating JESS and SASS in the project as well.
+Base on my first Flatiron project, 'StockShop' is going to test my abilty to refactor and expand on the original. This time incorporating JESS and SASS in the project as well.
