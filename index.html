@@ -6,30 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="./js/index.js" ></script>
+<script src="./js/index.js" defer></script>
 </head>
 <body>
 
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Stock</b></span> <span class="w3-hide-small w3-text-black">Shop</span></h1>
+<header class="desktop-headers" style="max-width:1500px;" id="home">
+  <div class="dekstop-header-container">
+    <h1 class="desktop-header-text"><span class="desktop-header-span"><b>Stock</b></span> <span class="desktop-header-span-alt">Shop</span></h1>
   </div>
 </header>
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="main-body" style="max-width:1555px">
 
-  <!-- Project Section -->
+  <!-- Hero banner-->
+  <img src="https://wallpaperaccess.com/full/2014238.jpg" style="max-height: 400px; width: 100%; position: relative; margin-left: 10%;"/>
+  <!-- Search Section -->
   <div class="search-containter">
     <label for="search-text">Company name</label><br>
-    <input type="search" id="search-text" value="NVDA">
+    <input type="search" id="search-text" value="XYZ">
   </div>
 
   <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+  <div class="about-information" id="about">
+    <h3 class="about-text">About</h3>
     <p>Get up to date stock information straight from Yahoo Finance API with the additional analysis tools from StockShop.
     </p>
   </div>
@@ -44,7 +46,7 @@
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16" style="position: sticky; bottom: 0%;">
+<footer class="footer-element" style="position: sticky; bottom: 0%;">
   <p>A Joshua Schlueter website </p>
 </footer>
 

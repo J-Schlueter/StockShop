@@ -1,5 +1,3 @@
-// const imgBar = document.querySelector("#stock-menu") // target the stock icons
-// imgBar.addEventListener("click", (e) => clickImg(e)) // when an element is clicked in the stock menu run clickImg on it
 
 // const companyBio = document.querySelector("#company-bio") //target company bio paragraph
 // function clickImg(e) {
@@ -35,34 +33,25 @@
 //     }
 // }
 
-// const likeBttn = document.querySelector("#like-button")
-// likeBttn.addEventListener("click", () => renderLike())
-// function renderLike() {
-//     window.alert("The price is right!")
-// }
 
-// const profileBttn = document.querySelector(".profile-button")
-// profileBttn.addEventListener("click", () => unhideBio())
-// function unhideBio(){
-//     if (companyBio.style.display === "none") {
-//         companyBio.style.display = "block";
-//       } else {
-//         companyBio.style.display = "none";
-//       }
-// }
+const searchBar = document.querySelector("#search-text") // target the stock icons
+searchBar.addEventListener("click", (e) => getText(e)) // when an element is clicked in the stock menu run clickImg on it
 
+function getText(e){
+  console.log(e.data)
+}
 
 
 const axios = require("axios").default;
 const APIkey = "tcUZGD3d6v56LzTep8gfe9N3YUNid1ea8W13NNwI"
 let options = {
   method: 'GET',
-  url: 'https://yfapi.net/v6/finance/quote?region=US&lang=en&symbols=NVDA',
+  url: `https://yfapi.net/v6/finance/quote?region=US&lang=en&symbols=${e.target.data}`,
   headers: {
     'x-api-key': APIkey
   }
 };
-let getQuote = function () {
+let getQuote = function(e) {
 axios.request(options).then(function (response) {
 	console.log(response.data);
     console.log(response.data.quoteResponse.result)
